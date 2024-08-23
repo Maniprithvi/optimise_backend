@@ -1,0 +1,49 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development concurrently \"tsc -w\" \"nodemon dist/index.js\"",
+    "build": "NODE_ENV=development rimraf dist && tsc",
+    "start": "NODE_ENV=development node dist/index.js"
+  },
+  "engines": {
+    "node": "20.x.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/compression": "^1.7.5",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "@types/morgan": "^1.9.9",
+    "concurrently": "^8.2.2",
+    "express": "^4.19.2",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express-session": "^1.18.0",
+    "facebook-node-sdk": "^0.2.0",
+    "google-auth-library": "^9.13.0",
+    "googleapis": "^142.0.0",
+    "helmet": "^7.1.0",
+    "moongose": "^1.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
+  }
+}
